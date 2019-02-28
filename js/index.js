@@ -13,7 +13,7 @@ function solveQuadraticEquation(a, b, c)
         let firstRoot = (-b + Math.sqrt(discriminant)) / (2 * a);
         let secondRoot = (-b - Math.sqrt(discriminant)) / (2 * a);
         return `First rational root is ${firstRoot}\n
-        Second rationalroot is ${secondRoot}`;
+        Second rational root is ${secondRoot}`;
     }
     else
     {
