@@ -8,12 +8,17 @@ alert(solution);
 function solveQuadraticEquation(a, b, c)
 {
     let discriminant = getDiscriminant(a, b, c);
-    if (discriminant >= 0)
+    if (discriminant > 0)
     {
         let firstRoot = (-b + Math.sqrt(discriminant)) / (2 * a);
         let secondRoot = (-b - Math.sqrt(discriminant)) / (2 * a);
         return `First rational root is ${firstRoot}\n
         Second rational root is ${secondRoot}`;
+    }
+    else if (discriminant === 0)
+    {
+        let root = -b / (2 * a);
+        return `Rational root is ${root}`;
     }
     else
     {
