@@ -23,10 +23,9 @@ function solveQuadraticEquation(a, b, c)
     else
     {
         let RootRealPart = -b / (2 * a);
-        let FirstRootImaginePart = Math.sqrt(-discriminant) / (2 * a);
-        let SecondRootImaginePart = -Math.sqrt(-discriminant) / (2 * a);
-        return `First complex root is ${RootRealPart} + (${FirstRootImaginePart})*i\n
-        Second complex root is ${RootRealPart} + (${SecondRootImaginePart})*i`;
+        let RootImaginePart = Math.sqrt(-discriminant) / (2 * a);
+        return `First complex root is ${RootRealPart} + ${RootImaginePart} * i\n
+        Second complex root is ${RootRealPart} - ${RootImaginePart} * i`;
     }
 }
 
